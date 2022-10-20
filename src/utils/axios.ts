@@ -16,8 +16,8 @@ service.interceptors.request.use(
 // Response interceptors
 service.interceptors.response.use(
     async (response: AxiosResponse) => {
-        console.log(response);
-
+        console.log('response', response?.data);
+        return response?.data;
         // do something
     },
     (error: any) => {
