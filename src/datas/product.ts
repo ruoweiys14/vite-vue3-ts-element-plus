@@ -1,3 +1,4 @@
+// 树形结构的平铺数据
 export const data = [
     {
         label: '男士',
