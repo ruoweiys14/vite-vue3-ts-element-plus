@@ -12,13 +12,22 @@
         </el-form-item>
         <el-form-item label="Activity time">
             <el-col :span="11">
-                <el-date-picker v-model="form.date1" type="date" placeholder="请选择日期" style="width: 100%" />
+                <el-date-picker
+                    v-model="form.date1"
+                    type="date"
+                    placeholder="请选择日期"
+                    style="width: 100%"
+                />
             </el-col>
             <el-col :span="2" class="text-center">
                 <span class="text-gray-500">-</span>
             </el-col>
             <el-col :span="11">
-                <el-time-picker v-model="form.date2" placeholder="请选择时间点" style="width: 100%" />
+                <el-time-picker
+                    v-model="form.date2"
+                    placeholder="请选择时间点"
+                    style="width: 100%"
+                />
             </el-col>
         </el-form-item>
         <el-form-item label="Instant delivery">
@@ -52,27 +61,26 @@
     <router-link to="/vueUse">点击跳转至vueUse页面</router-link>
 </template>
 <script lang="ts" setup>
-import API from '@/api';
-import { reactive } from 'vue';
-const form = reactive({
-    name: '',
-    region: '',
-    date1: '',
-    date2: '',
-    delivery: false,
-    type: [],
-    resource: '',
-    desc: ''
-})
+    import API from '@/api';
+    import { reactive } from 'vue';
+    const form = reactive({
+        name: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc: ''
+    });
 
-const onSubmit = () => {
-    console.log('submit!')
-    requestResAPI();
-}
+    const onSubmit = () => {
+        console.log('submit!');
+        requestResAPI();
+    };
 
-const requestResAPI = async () => {
-    let result = await API.login('zhangsan', '123456');
-    console.log(result);
-};
+    const requestResAPI = async () => {
+        let result = await API.login('zhangsan', '123456');
+        console.log(result);
+    };
 </script>
-

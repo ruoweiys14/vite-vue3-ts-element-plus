@@ -4,17 +4,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { useUserStore } from '@/store/user';
-import '@/styles/index.css';
-export default defineComponent({
-    name: 'UsePiniaDemo',
-    setup() {
-        const userStore = useUserStore();
+    import { defineComponent } from 'vue';
+    import { useUserStore } from '@/store/user';
+    import '@/styles/index.css';
+    export default defineComponent({
+        name: 'UsePiniaDemo',
+        setup() {
+            const userStore = useUserStore();
 
-        return {
-            userStore
-        };
-    }
-});
+            return {
+                userStore
+            };
+        }
+    });
 </script>
