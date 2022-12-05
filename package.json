@@ -22,6 +22,12 @@
             "path": "node_modules/cz-customizable"
         }
     },
+    "lint-staged": {
+        "*.{js,ts,vue}": [
+            "pnpm run eslint",
+            "pnpm run prettier"
+        ]
+    },
     "dependencies": {
         "@vueuse/core": "^9.3.0",
         "axios": "^1.1.2",
