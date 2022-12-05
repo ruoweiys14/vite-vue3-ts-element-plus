@@ -13,10 +13,11 @@
 -   vueuse：^9.3.0
 -   eslint：^8.25.0
 -   prettier：^2.7.1
-
-<!-- commitizen：^4.2.4 -->
-<!-- husky：^7.0.4 -->
+-   commitizen：^4.2.5
+-   husky：^7.0.4
 
 ## 项目使用说明
 
-启动命令 yarn dev
+启动命令: yarn dev commitizen (交互式提交 + 自定义提示文案 + Commit 规范)
+
+命令: yarn commit
