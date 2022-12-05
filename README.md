@@ -18,6 +18,6 @@
 
 ## 项目使用说明
 
-启动命令: yarn dev commitizen (交互式提交 + 自定义提示文案 + Commit 规范)
+启动命令: yarn dev
 
-命令: yarn commit
+commitizen (交互式提交 + 自定义提示文案 + Commit 规范)命令: yarn commit
