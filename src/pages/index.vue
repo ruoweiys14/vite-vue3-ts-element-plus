@@ -10,12 +10,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import UsePiniaDemo from '@/components/UsePiniaDemo.vue';
-export default defineComponent({
-    name: 'IndexPage',
-    components: {
-        UsePiniaDemo
-    }
-});
+    import { defineComponent } from 'vue';
+    import UsePiniaDemo from '@/components/UsePiniaDemo.vue';
+    export default defineComponent({
+        name: 'IndexPage',
+        components: {
+            UsePiniaDemo
+        }
+    });
 </script>

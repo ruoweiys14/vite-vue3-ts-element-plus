@@ -4,18 +4,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { useMouse } from '@vueuse/core';
+    import { defineComponent } from 'vue';
+    import { useMouse } from '@vueuse/core';
 
-export default defineComponent({
-    name: 'VueUsePage',
-    setup() {
-        const { x, y } = useMouse();
+    export default defineComponent({
+        name: 'VueUsePage',
+        setup() {
+            const { x, y } = useMouse();
 
-        return {
-            x,
-            y
-        };
-    }
-});
+            return {
+                x,
+                y
+            };
+        }
+    });
 </script>
