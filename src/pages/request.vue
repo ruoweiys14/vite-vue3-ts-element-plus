@@ -7,26 +7,26 @@
     </el-select>
 
     <br />
+    <Cascader></Cascader>
+    <br /><br />
     <router-link to="/">点击跳转至首页</router-link>
-
 </template>
 <script lang="ts" setup>
 import { defineComponent, ref } from 'vue';
 import request from '@/utils/axios';
-
+import Cascader from '@/components/Cascader.vue';
 
 interface ListItem {
-    id: number
-    name: string
+    id: number;
+    name: string;
 }
 
-
 const value = ref([]);
-const options = ref<ListItem[]>([])
-const loading = ref(false)
+const options = ref<ListItem[]>([]);
+const loading = ref(false);
 
 const requestRes = async () => {
-    loading.value = true
+    loading.value = true;
     const { data } = await request({
         url: '/api/dict/search/platform-list',
         method: 'get'
@@ -34,7 +34,6 @@ const requestRes = async () => {
 
     options.value = data;
     console.log('options', options);
-    loading.value = false
+    loading.value = false;
 };
-
 </script>

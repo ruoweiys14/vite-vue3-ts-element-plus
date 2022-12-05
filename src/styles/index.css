@@ -5,3 +5,7 @@
 .root {
     color: var(--main-bg-color);
 }
+
+.el-cascader--large {
+    width: 300px;
+}
