@@ -1,13 +1,13 @@
 <template>
     <h2> 这里是request请求页面 </h2>
     <br />
+    <Cascader></Cascader>
+    <br /><br />
+
     <el-button type="primary" @click="requestRes()">获取平台列表</el-button>
     <el-select v-model="value" multiple placeholder="Select" style="width: 240px">
         <el-option v-for="item in options" :key="item.id" :label="item.name" :value="item.id" />
     </el-select>
-
-    <br />
-    <Cascader></Cascader>
     <br /><br />
     <router-link to="/">点击跳转至首页</router-link>
 </template>
